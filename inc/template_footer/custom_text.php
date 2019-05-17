@@ -1,0 +1,1 @@
+<?php echo do_shortcode( met_option('footer_custom_text') ) ?>

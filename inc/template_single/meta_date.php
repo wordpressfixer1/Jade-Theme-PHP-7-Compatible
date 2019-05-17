@@ -1,0 +1,1 @@
+<a href="<?php the_permalink() ?>" class="met_color_transition2"><?php metcreative_post_meta_date(); ?></a>

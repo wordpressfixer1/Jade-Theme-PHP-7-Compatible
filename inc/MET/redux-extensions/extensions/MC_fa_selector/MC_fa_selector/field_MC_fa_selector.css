@@ -1,0 +1,36 @@
+.met-fa-wrap i.fa-none{
+	color: #ccc;
+}
+
+#met_mfp_fa_icon_list {
+	height: 500px;
+	background: #FFF;
+	padding: 0 0 5px 5px;
+	border: 1px solid #EAEAEA;
+	overflow-y: scroll;
+}
+
+#met_mfp_fa_icon_list .button {
+	width: 41px;
+	height: 40px;
+	margin: 5px 5px 0 0;
+	font-size: 20px;
+	line-height: 40px !important;
+	padding: 0 !important;
+	text-align: center;
+}
+
+#met_mfp_fa_icon_list .button:hover {
+	border:1px solid #000000;
+	color: #000000;
+}
+
+
+#met_mfp_fa_icon_selector{
+	position: relative;
+	width:auto;
+	max-width: 560px;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 30px;
+}

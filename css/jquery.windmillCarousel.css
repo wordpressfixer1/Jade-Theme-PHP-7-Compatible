@@ -1,0 +1,162 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Windmill Carousel
+ * ----------------------------------------------------------------------------------------
+ */
+.met_windmill_carousel{
+	background-color: #EFEEE9;
+	width:            100%;
+	overflow:         hidden;
+	position:         relative;
+}
+
+.met_windmill_carousel_item{
+	display:    block;
+	float:      left;
+	width:      50%;
+	position:   absolute;
+	opacity:    1;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:     alpha(opacity=100);
+}
+
+.met_windmill_carousel article{
+	float:    left;
+	position: absolute;
+	padding:  30px;
+	width:    50%;
+	height:   50%;
+}
+
+.met_windmill_carousel article[data-cube-position='TL']{ top: 0; left: 0; }
+
+.met_windmill_carousel article[data-cube-position='TR']{ top: 0; left: 50%; }
+
+.met_windmill_carousel article[data-cube-position='BL']{ top: 50%; left: 0; }
+
+.met_windmill_carousel article[data-cube-position='BR']{ top: 50%; left: 50%; }
+
+.met_windmill_carousel article nav{
+	display: block;
+}
+
+.met_windmill_carousel article nav a{
+	width:           35px;
+	height:          35px;
+	line-height:     35px;
+	text-align:      center;
+	display:         inline-block;
+	color:           #000000;
+	text-decoration: none;
+	font-size:       12px;
+}
+
+.met_windmill_carousel > div > img{
+	width: 100%;
+}
+
+.met_windmill_carousel_item{
+	-webkit-transform:        scale(1) translateZ(0);
+	-ms-transform:            scale(1) translateZ(0);
+	transform:                scale(1) translateZ(0);
+	-webkit-transform-origin: center center;
+	-ms-transform-origin:     center center;
+	transform-origin:         center center;
+}
+
+.met_windmill_carousel_item[data-cube-position="BL"]{
+	top:                50%;
+	left:               0;
+	-webkit-transition: all ease-out 0.5s;
+	transition:         all ease-out 0.5s;
+}
+
+.met_windmill_carousel_item[data-cube-position="BR"]{
+	top:                50%;
+	left:               50%;
+	-webkit-transition: all ease-out 0.5s;
+	transition:         all ease-out 0.5s;
+}
+
+.met_windmill_carousel_item[data-cube-position="TL"]{
+	top:                0;
+	left:               0;
+	-webkit-transition: all ease-out 0.6s;
+	transition:         all ease-out 0.6s;
+}
+
+.met_windmill_carousel_item[data-cube-position="TR"]{
+	top:                0;
+	left:               50%;
+	-webkit-transition: all ease-out 0.5s;
+	transition:         all ease-out 0.5s;
+}
+
+.met_windmill_carousel_item[data-cube-position="TRR"],
+.met_windmill_carousel_item[data-cube-position="TRU"],
+.met_windmill_carousel_item[data-cube-position="TLL"],
+.met_windmill_carousel_item[data-cube-position="TLU"],
+.met_windmill_carousel_item[data-cube-position="BLD"],
+.met_windmill_carousel_item[data-cube-position="BLL"],
+.met_windmill_carousel_item[data-cube-position="BRR"],
+.met_windmill_carousel_item[data-cube-position="BRD"]{
+	opacity:            0;
+	-ms-filter:         "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:             alpha(opacity=0);
+	-webkit-transform:  scale(0.3) translateZ(0);
+	-ms-transform:      scale(0.3) translateZ(0);
+	transform:          scale(0.3) translateZ(0);
+	-webkit-transition: all ease-out 0.4s, -webkit-transform ease 0.3s;
+	transition:         all ease-out 0.4s, transform ease 0.3s;
+}
+
+.met_windmill_carousel_item[data-cube-position="TRR"]{
+	top:  0;
+	left: 100%;
+}
+
+.met_windmill_carousel_item[data-cube-position="TRU"]{
+	top:  -50%;
+	left: 50%;
+}
+
+.met_windmill_carousel_item[data-cube-position="TLL"]{
+	top:  0;
+	left: -50%;
+}
+
+.met_windmill_carousel_item[data-cube-position="TLU"]{
+	top:  -50%;
+	left: 0;
+}
+
+.met_windmill_carousel_item[data-cube-position="BLD"]{
+	top:  100%;
+	left: 0;
+}
+
+.met_windmill_carousel_item[data-cube-position="BLL"]{
+	top:  50%;
+	left: -50%;
+}
+
+.met_windmill_carousel_item[data-cube-position="BRR"]{
+	top:  50%;
+	left: 100%;
+}
+
+.met_windmill_carousel_item[data-cube-position="BRD"]{
+	top:  100%;
+	left: 50%;
+}
+
+
+
+/* Phone Portrait Resolution */
+@media all and (max-width: 360px){
+	
+	.met_windmill_carousel article{ padding:  15px !important; }
+	
+	.met_windmill_carousel article nav{ position: absolute; bottom: 0; }
+	
+}

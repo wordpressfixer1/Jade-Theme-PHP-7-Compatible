@@ -1,0 +1,106 @@
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+	margin: 0 !important;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+	font-size: 14px;
+    padding: 30px;
+    display: none;
+    background-color: #F7F6F4;
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+.r-tabs {
+    position: relative;
+}
+
+.r-tabs.r-tabs-vertical .r-tabs-nav {
+    float: left;
+    width: 220px;
+}
+
+.r-tabs.r-tabs-vertical .r-tabs-panel{margin-left: 220px}
+
+.r-tabs .r-tabs-nav .r-tabs-tab {
+    position: relative;
+    margin-right: -4px;
+	margin-left: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-tab:hover,
+.r-tabs .r-tabs-nav .r-tabs-tab:hover .r-tabs-anchor{
+	color: #373B3D;
+	background-color: #FFCA07;
+}
+
+.r-tabs.r-tabs-vertical .r-tabs-nav .r-tabs-tab,
+.r-tabs.r-tabs-vertical .r-tabs-nav .r-tabs-anchor{
+    display: block;
+    margin-right: 0;
+    text-align: center;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+    background: #EFEEE9;
+    margin-bottom: 0;
+    padding: 10px 26px;
+    display: inline-block;
+    text-decoration: none;
+    color: #74706D;
+    font-size: 16px;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+	background-color: #F7F6F4;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+	background-color: #F7F6F4;
+}
+
+.r-tabs .r-tabs-panel {
+}
+
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    display: block;
+    padding: 10px;
+    background-color: #EFEEE9;
+    color: #74706D;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    background-color: #FFCA07;
+    color: #373B3D;
+    margin-bottom: 0;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+
+    .r-tabs.r-tabs-vertical .r-tabs-panel{margin-left: 0}
+}

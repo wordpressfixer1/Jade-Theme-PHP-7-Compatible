@@ -1,0 +1,50 @@
+.dslc-in-viewport{
+    opacity: 1 !important;
+    transform: translateY(0)!important;
+}
+
+.met_hotel_availability_wrap input[type=date] {
+    padding: 9.5px 10px;
+    height: 40px;
+}
+
+.met_sticky_header .met_primary_nav > li > a{
+	line-height: 59px;
+}
+
+.met_portfolio_item_details .met_portfolio_item_links a{
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.widget_search input{width: 100%;}
+
+.widget_search .screen-reader-text{
+	position: static!important;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	display: block;
+}
+
+select{background-image: none;}
+
+[data-wow-duration]{
+	display: block;
+	visibility: visible !important;
+	opacity: 1;
+}
+
+.met_info_box_icon_2 figcaption{margin-bottom: 20px;}
+
+.met_progress_bar_1_progress label{
+	bottom: 10px;
+	left: 92%;
+
+	top: auto;
+}
+
+/* Tablet Landscape Resolution */
+@media all and (min-width: 1024px){
+	.visible-1024.met_vcenter{visibility: hidden;height: 0;}
+}

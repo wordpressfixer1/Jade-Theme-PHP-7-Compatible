@@ -1,0 +1,122 @@
+/* Video Player Skin */
+.mejs-container .mejs-controls{background: #F7F6F4 !important;}
+
+.mejs-controls div.mejs-time-rail{
+    padding: 0px !important;
+    height: 10px !important;
+    position: absolute !important;
+    bottom: 100% !important;
+    width: 100% !important;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total{
+    border-radius: 0 !important;
+    margin: 0 !important;
+    background: #9B9B9B !important;
+    width: 100% !important;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded{
+    border-radius: 0 !important;
+    background: rgba(255, 202, 7, 0.3) !important;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current{
+    background: rgb(255, 202, 7) !important;
+    border-radius: 0 !important;
+}
+
+.mejs-container .mejs-controls div.mejs-button{
+    width: 30px !important;
+}
+
+.mejs-container .mejs-controls div.mejs-button,
+.mejs-container .mejs-controls div.mejs-time{
+    height: 30px !important;
+}
+
+.mejs-controls .mejs-button button{
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 !important;
+    background: #F1F0EC !important;
+}
+
+.mejs-controls .mejs-playpause-button{margin-right: 10px !important;}
+
+.mejs-controls .mejs-button button:before{
+    font-family: 'FontAwesome' !important;
+    text-align: center !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: #454545 !important;
+    font-size: 10px !important;
+    line-height: 31px !important;
+    display: block !important;
+}
+
+.mejs-controls .mejs-playpause-button.mejs-play button:before{content: '\f04b' !important;}
+.mejs-controls .mejs-playpause-button.mejs-pause button:before{content: '\f04c' !important;}
+.mejs-controls .mejs-fullscreen-button button:before{content: '\f065' !important;}
+.mejs-controls .mejs-fullscreen-button.mejs-unfullscreen button:before{content: '\f066' !important;}
+
+.mejs-controls .mejs-volume-button.mejs-unmute button:before{content: '\f026' !important;}
+.mejs-controls .mejs-volume-button.mejs-mute button:before{content: '\f028' !important;}
+
+.mejs-container .mejs-controls .mejs-time{
+    padding: 0 !important;
+    height: auto !important;
+}
+
+.mejs-container .mejs-controls .mejs-time span{
+    color: #454545 !important;
+    line-height: 30px !important;
+    font-size: 10px !important;
+    margin: 0 5px !important;
+}
+
+.mejs-container .mejs-controls div.mejs-volume-button,
+.mejs-container .mejs-controls div.mejs-fullscreen-button,
+.mejs-container .mejs-controls div.mejs-horizontal-volume-slider{
+    float: right !important;
+}
+
+.mejs-controls .mejs-button button:focus{outline: none !important;}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider{
+    width: 30px !important;
+    background: rgba(241, 240, 236, 0.5) !important;
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total,
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{
+    left: 14px !important;
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{
+    left: 7px !important;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{
+    border-radius: 0 !important;
+    background: #9B9B9B !important;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{
+    background: rgb(255, 202, 7) !important;
+    border-radius: 0 !important;
+}
+
+.wp-audio-shortcode{margin-top: 10px !important;}
+
+.wp-video-shortcode{ max-width: 100% }
+
+.mfp-wrap .mejs-container:not(.mejs-container-fullscreen){width: 600px !important;}
+
+.mfp-wrap .mejs-container.mejs-video:not(.mejs-container-fullscreen){
+	height: 350px !important;
+	max-height: 100% !important;}
+
+.mfp-wrap .mejs-container:not(.mejs-container-fullscreen) .mejs-overlay-play{height: 92% !important;}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {top: 4.5px !important;}
